@@ -1,9 +1,16 @@
+import styled from "styled-components";
+
+
+
+const Wrapper = styled.div`
+
+`; 
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+       <Wrapper>
+        
+       </Wrapper>
   );
 }
 

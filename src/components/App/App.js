@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import GlobalStyles from "./constants";
+import GlobalStyles from "../../constants";
 
 
 const Wrapper = styled.div`

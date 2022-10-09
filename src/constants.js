@@ -1,5 +1,16 @@
 import { createGlobalStyle } from "styled-components/macro";
 
+const BREAKPOINTS = {
+  tabletMin: 550,
+  laptopMin: 1100,
+  desktopMin: 1440,
+};
+export const QUERIES = {
+  tabletAndUp: `(min-width: ${BREAKPOINTS.tabletMin / 16}rem)`,
+  laptopAndUp: `(min-width: ${BREAKPOINTS.laptopMin / 16}rem)`,
+  desktopAndUp: `(min-width: ${BREAKPOINTS.desktopMin / 16}rem)`,
+};
+
 const GlobalStyles = createGlobalStyle`
 
 
@@ -8,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 html {
+  font-family: 'Barlow', sans-serif;
   --14px: 0.875rem;
   --15px: 0.9375rem;
   --16px: 1rem;
@@ -16,6 +28,30 @@ html {
   --19px: 1.1875rem;
   --20px: 1.25rem;
   --21px: 1.3125rem;
+  --28px : 1.75rem; 
+  --32px: 2rem;
+  --40px: 2.5rem;
+  --56px: 3.5rem; 
+
+  --font-weight-heavy: 900; 
+
+  /* primary */
+
+--soft-red: hsl(7, 99%, 70%)
+--yellow: hsl(51, 100%, 49%)
+/* (graphic design text) */
+--dark-desaturated-cyan: : hsl(167, 40%, 24%); 
+/* (photography text) */
+--dark-blue : hsl(198, 62%, 26%); 
+/* (footer) */
+--dark-moderate-cyan:: hsl(168, 34%, 41%); 
+
+  /* neutral */
+--very-dark-desaturated-blue: hsl(212, 27%, 19%); 
+--very-dark-grayish-blue: hsl(213, 9%, 39%);
+--dark-grayish-blue: hsl(232, 10%, 55%); 
+--Grayish-blue: hsl(210, 4%, 67%); 
+--white: hsl(0, 0%, 100%); 
 }
 
 
@@ -29,7 +65,7 @@ html {
 /*
   3. Allow percentage-based heights in the application
 */
-html, body {
+html, body, #root {
   height: 100%;
 }
 /*
@@ -60,11 +96,53 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', serif;
+}
 /*
   9. Create a root stacking context
 */
 #root, #__next {
   isolation: isolate;
+}
+
+
+h1, h2, h3, h4 {
+  font-weight: var(--font-weight-heavy); 
+}
+
+h1 {
+   font-size: var(--40px); 
+   letter-spacing: 6.25px;
+   text-transform: uppercase;
+   color: var(--white);
+
+   @media ${QUERIES.tabletAndUp} {
+     font-size:  var(--56px);
+     letter-spacing: 8.75px;
+   }
+}
+
+h2 {
+  font-size:  var(--32px);
+  letter-spacing: -.22px;
+
+  @media ${QUERIES.desktopAndUp} {
+    font-size: var(--40px); 
+    letter-spacing: -.28px;
+  }
+}
+
+
+h3 {
+   font-size: var(--28px); 
+   letter-spacing: -.2px;
+}
+
+h4 {
+  font-size: var(--18px); 
+  letter-spacing: -.12px;
 }
 
 

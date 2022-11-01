@@ -9,8 +9,15 @@ const Outter = styled.div`
   position: relative;
   margin: 0 -24px;
   height: 538px;
-`;
 
+  @media ${QUERIES.tabletAndUp} {
+    height: 800px;
+  }
+
+  @media ${QUERIES.desktopAndUp} {
+    height: 800px;
+  }
+`;
 
 const Wrapper = styled.div`
   width: 100%;
@@ -30,12 +37,9 @@ const Wrapper = styled.div`
   background-size: cover;
   position: absolute;
 
-
-
-
   @media ${QUERIES.tabletAndUp} {
     background-image: url(${HeaderImgDesk});
-    height: 800px;
+
     padding: 0 40px;
     padding-bottom: 250px;
     padding-top: 34px;
@@ -43,7 +47,7 @@ const Wrapper = styled.div`
 
   @media ${QUERIES.desktopAndUp} {
     background-image: url(${HeaderImgDesk});
-    height: 800px;
+
     padding-bottom: 330px;
     justify-content: space-around;
     background-position: center 70%;
@@ -54,31 +58,26 @@ const Title = styled.h1`
   text-align: center;
 `;
 
-
-
 function Hero() {
   return (
-
-   <Outter>
-
+    <Outter>
       <Wrapper>
         <MobileHeader />
         <Title>We are creatives</Title>
         <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
           <g
             stroke="#FFF"
-            stroke-width="6"
+            strokeWidth="6"
             fill="none"
-            fill-rule="evenodd"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
+            fillRule="evenodd"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
             <path d="M18 3v100M3 95.484l15 15 15-15" />
           </g>
-        </svg>          
+        </svg>
       </Wrapper>
-            </Outter>
-
+    </Outter>
   );
 }
 

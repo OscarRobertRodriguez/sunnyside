@@ -33,6 +33,7 @@ html {
   --40px: 2.5rem;
   --56px: 3.5rem; 
 
+  --font-weight-med: 600; 
   --font-weight-heavy: 900; 
 
   /* primary */
@@ -50,7 +51,7 @@ html {
 --very-dark-desaturated-blue: hsl(212, 27%, 19%); 
 --very-dark-grayish-blue: hsl(213, 9%, 39%);
 --dark-grayish-blue: hsl(232, 10%, 55%); 
---Grayish-blue: hsl(210, 4%, 67%); 
+--grayish-blue: hsl(210, 4%, 67%); 
 --white: hsl(0, 0%, 100%); 
 }
 
@@ -76,6 +77,7 @@ html, body, #root {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+
 }
 /*
   6. Improve media defaults
@@ -99,12 +101,15 @@ p, h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fraunces', serif;
+  text-transform: capitalize;
 }
 /*
   9. Create a root stacking context
 */
 #root, #__next {
   isolation: isolate;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -131,6 +136,7 @@ h2 {
   @media ${QUERIES.desktopAndUp} {
     font-size: var(--40px); 
     letter-spacing: -.28px;
+    line-height: 49px;
   }
 }
 
@@ -145,6 +151,13 @@ h4 {
   letter-spacing: -.12px;
 }
 
+
+p {
+  font-size: var(--18px);
+  color: var(--dark-grayish-blue);
+  font-weight: var(--font-weight-med);
+  letter-spacing: -.12;
+}
 
 `;
 

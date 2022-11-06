@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { QUERIES } from "../../constants";
 import img1 from "../../images/mobile/image-transform.jpg";
 
+
 function learnMoreCard({img, direction, children }) {
   return (
     <Wrapper

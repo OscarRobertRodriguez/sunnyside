@@ -154,7 +154,7 @@ h4 {
 
 p {
   font-size: var(--18px);
-  color: var(--dark-grayish-blue);
+  color: var(--very-dark-desaturated-blue);
   font-weight: var(--font-weight-med);
   letter-spacing: -.12;
 }

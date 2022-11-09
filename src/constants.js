@@ -67,8 +67,14 @@ html {
 /*
   3. Allow percentage-based heights in the application
 */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 html, body, #root {
   height: 100%;
+
 }
 /*
   Typographic tweaks!
@@ -109,8 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
-  display: flex;
-  justify-content: center;
+ 
 }
 
 

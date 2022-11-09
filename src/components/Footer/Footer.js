@@ -60,6 +60,7 @@ const Wrapper = styled.div`
   padding-top: 64px;
   padding-bottom: 80px;
 
+
   @media ${QUERIES.tabletAndUp} {
     padding-top: 72px;
     padding-bottom: 72px;

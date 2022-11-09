@@ -5,6 +5,7 @@ import Hero from "../Hero/Hero";
 import LearnMoreCards from "../LearnMoreCards/LearnMoreCards";
 import CategoryCards from "../CategoryCards/CategoryCards";
 import Footer from "../Footer/Footer";
+import ImageGallery from "../ImageGallery/ImageGallery";
 
 const Wrapper = styled.div`
   padding: 0 24px;
@@ -18,6 +19,7 @@ function App() {
       <Hero />
       <LearnMoreCards />
       <CategoryCards />
+      <ImageGallery />
       <Footer/>
       <GlobalStyles />
     </Wrapper>

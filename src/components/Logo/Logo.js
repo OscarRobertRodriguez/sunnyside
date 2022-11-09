@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { QUERIES } from "../../constants";
 
-function Logo({ fill }) {
+function Logo({ fill, w , h}) {
   return (
     <SvgWrapper
       style={{
         "--fill-color": fill,
+        "--height": h,
+        "--width": w
       }}
       viewBox="0 0 124 24"
       xmlns="http://www.w3.org/2000/svg"
@@ -18,13 +20,15 @@ function Logo({ fill }) {
 
 const SvgWrapper = styled.svg`
   fill: var(--fill-color, #fff);
-  width: 124px;
-  height: 24px;
+  width: var(--width, 124px);
+  height: var(--height, 24px);
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.tabletAndUp} {
     width: 170px;
     height: 33px;
   }
 `;
 
 export default Logo;
+
+

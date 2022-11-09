@@ -28,7 +28,7 @@ html {
   --19px: 1.1875rem;
   --20px: 1.25rem;
   --21px: 1.3125rem;
-  --28px : 1.75rem; 
+  --28px: 1.75rem; 
   --32px: 2rem;
   --40px: 2.5rem;
   --56px: 3.5rem; 
@@ -38,14 +38,15 @@ html {
 
   /* primary */
 
---soft-red: hsl(7, 99%, 70%)
---yellow: hsl(51, 100%, 49%)
+--soft-red: hsl(7, 99%, 70%);
+--yellow: hsl(51, 100%, 49%);
 /* (graphic design text) */
---dark-desaturated-cyan: : hsl(167, 40%, 24%); 
+--dark-desaturated-cyan:  hsl(167, 40%, 24%); 
 /* (photography text) */
 --dark-blue : hsl(198, 62%, 26%); 
 /* (footer) */
---dark-moderate-cyan:: hsl(168, 34%, 41%); 
+--dark-moderate-cyan: hsl(168, 44%, 70%); 
+--footer-links: hsla(167, 34%, 41%, 1); 
 
   /* neutral */
 --very-dark-desaturated-blue: hsl(212, 27%, 19%); 

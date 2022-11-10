@@ -22,7 +22,7 @@ function HamburgerIcon({fill}) {
 
 const Wrapper = styled.svg`
  fill: var(--fill-color, #fff) ; 
-
+ cursor: pointer;
 `;
 
 export default HamburgerIcon;

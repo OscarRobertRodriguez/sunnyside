@@ -58,11 +58,11 @@ const Title = styled.h1`
   text-align: center;
 `;
 
-function Hero() {
+function Hero({windowSize}) {
   return (
     <Outter>
       <Wrapper>
-        <MobileHeader />
+        <MobileHeader windowSize={windowSize} />
         <Title>We are creatives</Title>
         <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
           <g

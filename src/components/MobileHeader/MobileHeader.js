@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { QUERIES } from "../../constants";
 import Logo from "../Logo/Logo";
 import HamburgerIcon from "../HamburgerIcon/HamburgerIcon";
+import DesktopHeader from "../DesktopHeader/DesktopHeader";
 
 const Wrapper = styled.header`
   width: 100%;
@@ -12,12 +13,15 @@ const Wrapper = styled.header`
   justify-content: space-between;
 `;
 
-
-function MobileHeader() {
+function MobileHeader({ windowSize }) {
   return (
     <Wrapper>
       <Logo fill={"var(--white)"} />
-      <HamburgerIcon fill={"var(--white)"} />
+      {windowSize.innerWidth >= 1100 ? (
+        <DesktopHeader />
+      ) : (
+        <HamburgerIcon fill={"var(--white)"} />
+      )}
     </Wrapper>
   );
 }

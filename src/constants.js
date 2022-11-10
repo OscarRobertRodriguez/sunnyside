@@ -71,6 +71,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  isolation: isolate;
 }
 html, body, #root {
   height: 100%;

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Portal } from "react-portal";
 import styled from "styled-components/macro";
 import GlobalStyles from "../../constants";
 // import DesktopHeader from '../DesktopHeader';
@@ -8,6 +9,7 @@ import CategoryCards from "../CategoryCards/CategoryCards";
 import Footer from "../Footer/Footer";
 import ImageGallery from "../ImageGallery/ImageGallery";
 import Testimonials from "../Testimonials/Testimonials";
+import HamburgerIcon from "../HamburgerIcon/HamburgerIcon";
 
 function getWindowSize() {
   const { innerWidth } = window;
@@ -16,6 +18,8 @@ function getWindowSize() {
 
 function App() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
@@ -29,12 +33,13 @@ function App() {
 
   return (
     <Wrapper>
-      <Hero windowSize={windowSize} />
+      <Hero windowSize={windowSize} setIsOpen={setIsOpen} />
       <LearnMoreCards />
       <CategoryCards />
       <Testimonials />
       <ImageGallery />
       <Footer />
+
       <GlobalStyles />
     </Wrapper>
   );

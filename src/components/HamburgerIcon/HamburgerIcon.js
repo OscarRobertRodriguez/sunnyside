@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-function HamburgerIcon({fill}) {
+function HamburgerIcon({fill, setIsOpen}) {
   return (
     <Wrapper
+    onClick={() => setIsOpen(prev => !prev)}
     style={{
       "--fill-color": fill,
     }}

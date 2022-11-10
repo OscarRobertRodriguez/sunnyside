@@ -13,14 +13,14 @@ const Wrapper = styled.header`
   justify-content: space-between;
 `;
 
-function MobileHeader({ windowSize }) {
+function MobileHeader({ windowSize, setIsOpen }) {
   return (
     <Wrapper>
       <Logo fill={"var(--white)"} />
       {windowSize.innerWidth >= 1100 ? (
         <DesktopHeader />
       ) : (
-        <HamburgerIcon fill={"var(--white)"} />
+        <HamburgerIcon fill={"var(--white)"} setIsOpen={setIsOpen} />
       )}
     </Wrapper>
   );

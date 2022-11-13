@@ -34,4 +34,12 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 -24px;
+
+  @media ${QUERIES.tabletAndUp} {
+    padding-top: 64px;
+  }
+
+  @media ${QUERIES.desktopAndUp} {
+    padding-top: 0;
+  }
 `;

@@ -25,9 +25,6 @@ const Wrapper = styled.div`
   flex-direction: column-reverse;
   width: 100%;
 
-  @media ${QUERIES.tabletAndUp} {
-    padding-top: 64px;
-  }
 
   @media ${QUERIES.desktopAndUp} {
     padding: 0 -24px;

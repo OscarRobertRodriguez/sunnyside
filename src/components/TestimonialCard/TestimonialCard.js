@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { QUERIES } from "../../constants";
-import Avatar1 from '../../images/image-emily.jpg';
+
 
 function TestimonialCard({avatar, children}) {
   return (

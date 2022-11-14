@@ -1,14 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { QUERIES } from "../../constants";
 
 function DesktopHeader() {
   return (
     <Wrapper>
-
-        <Link href="0">About</Link>
-
-
+      <Link href="0">About</Link>
       <Link href="0">Services</Link>
       <Link href="0">Projects</Link>
       <Link href="0">contact</Link>
@@ -20,14 +16,8 @@ export default DesktopHeader;
 
 const Wrapper = styled.nav`
   display: flex;
-  /* text-align: center; */
   gap: 5px;
-
   justify-content: space-around;
-
-  & div {
-
-  }
 `;
 
 const Link = styled.a`
@@ -43,10 +33,7 @@ const Link = styled.a`
   height: 56px;
   position: relative;
   border-radius: 32px;
-  transition: .2s all;
-  
-
-
+  transition: 0.2s all;
 
   &:hover {
     background-color: hsl(199, 86%, 72%);

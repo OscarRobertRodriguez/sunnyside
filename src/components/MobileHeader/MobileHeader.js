@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { QUERIES } from "../../constants";
 import Logo from "../Logo/Logo";
 import HamburgerIcon from "../HamburgerIcon/HamburgerIcon";
 import DesktopHeader from "../DesktopHeader/DesktopHeader";

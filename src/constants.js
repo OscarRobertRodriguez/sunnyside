@@ -43,7 +43,7 @@ html {
 /* (graphic design text) */
 --dark-desaturated-cyan:  hsl(167, 40%, 24%); 
 /* (photography text) */
---dark-blue : hsl(198, 62%, 26%); 
+--dark-blue : hsl(198, 55%, 27%); 
 /* (footer) */
 --dark-moderate-cyan: hsl(168, 44%, 70%); 
 --footer-links: hsla(167, 34%, 41%, 1); 
@@ -51,9 +51,9 @@ html {
   /* neutral */
 --very-dark-desaturated-blue: hsl(212, 27%, 19%); 
 --very-dark-grayish-blue: hsl(213, 9%, 39%);
---dark-grayish-blue: hsl(232, 10%, 55%); 
+--dark-grayish-blue: hsl(233, 10%, 55%); 
 --grayish-blue: hsl(210, 4%, 67%); 
---white: hsl(0, 0%, 100%); 
+--white: hsl(35, 100%, 99%); 
 }
 
 
@@ -85,7 +85,7 @@ html, body, #root {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-
+background-color: var(--white);
 
 }
 /*

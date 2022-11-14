@@ -70,7 +70,7 @@ const Wrapper = styled.div`
 const Nav = styled.nav`
   width: 300px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 40px;
 
   a {

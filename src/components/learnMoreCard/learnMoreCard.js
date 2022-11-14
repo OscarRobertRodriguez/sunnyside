@@ -43,6 +43,10 @@ const ContentWrapper = styled.div`
   gap: 24px;
   padding: 64px 24px;
 
+  p {
+    color: var(--dark-grayish-blue);
+  }
+
   @media ${QUERIES.tabletAndUp} {
     flex: 1 1 425px;
     padding-left: 0px;

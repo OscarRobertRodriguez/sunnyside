@@ -19,11 +19,14 @@ const Wrapper = styled.div`
   padding: 0 24px;
   padding-bottom: 59px;
 
-
+h3 {
+  color: var(--dark-blue);
+}
 
   p {
     width: 100%;
-    
+    color: var(--dark-blue);
+    font-size: 16px;
 
     @media ${QUERIES.tabletAndUp} {
       width: 339px;

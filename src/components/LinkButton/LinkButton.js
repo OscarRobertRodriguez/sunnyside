@@ -25,7 +25,7 @@ const Wrapper = styled.a`
     font-weight: var(--font-weight-heavy);
     letter-spacing: 1px;
     font-size: 15px;
-    display: block;
+    display: flex;
     position: relative;
     cursor: pointer;
 

@@ -12,7 +12,7 @@ function learnMoreCard({ img, direction, children }) {
         "--rightPadding": direction === "row-reverse" ? "53px" : "0px",
       }}
     >
-      <ContentWrapper>{children}</ContentWrapper>
+      <ContentWrapper> <div style={{display: 'flex', flexDirection: 'column', gap: '32px'}}>{children}</div></ContentWrapper>
       <ImgWrapper>
         <img src={img} alt="test" />
       </ImgWrapper>
@@ -38,10 +38,14 @@ const ContentWrapper = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex: 1 1 375px;
-
+  flex: 1 1 445px;
   gap: 24px;
   padding: 64px 24px;
+
+   a {
+
+    align-self: center;
+   }
 
   p {
     color: var(--dark-grayish-blue);
@@ -51,6 +55,8 @@ const ContentWrapper = styled.div`
     flex: 1 1 425px;
     padding-left: 0px;
     padding-right: 0px;
+
+ 
 
     h2,
     p {
@@ -64,10 +70,16 @@ const ContentWrapper = styled.div`
     flex: 1 1 720px;
     gap: 32px;
     text-align: left;
+   
+    a {
+      margin-left: 8px;
+      align-self: start;
+    }
 
     h2,
     p {
       width: 445px;
+
     }
   }
 `;

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { QUERIES } from "../../constants";
 import LearnMoreCard from "../learnMoreCard/learnMoreCard";
+import LinkButton from "../LinkButton/LinkButton";
 import img1 from "../../images/mobile/image-transform.jpg";
 import img2 from "../../images/mobile/image-stand-out.jpg";
 
@@ -15,6 +16,9 @@ function LearnMoreCards() {
           grow fast. Engage your clients through compelling visuals that do most
           of the marketing for you.
         </p>
+        <LinkButton textColor={`var(--yellow)`}>
+        Learn More
+        </LinkButton>
       </LearnMoreCard>
       <LearnMoreCard direction="row-reverse" img={img2}>
         <h2>transform your brand</h2>
@@ -23,6 +27,9 @@ function LearnMoreCards() {
           photographers, videographers, and copywriters, we’ll build and extend
           your brand in digital places.
         </p>
+        <LinkButton textColor={`var(--soft-red)`}>
+        Learn More
+        </LinkButton>
       </LearnMoreCard>
     </Wrapper>
   );

@@ -50,6 +50,14 @@ const ContentWrapper = styled.div`
   p {
     color: var(--dark-grayish-blue);
   }
+  
+  h2 {
+    text-transform: initial;
+  }
+
+  h2::first-letter {
+     text-transform: capitalize;
+  }
 
   @media ${QUERIES.tabletAndUp} {
     flex: 1 1 425px;

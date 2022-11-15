@@ -19,9 +19,9 @@ function LearnMoreCards() {
       <LearnMoreCard direction="row-reverse" img={img2}>
         <h2>transform your brand</h2>
         <p>
-          We are full-service creative agency specializing in helping brands
-          grow fast. Engage your clients through compelling visuals that do most
-          of the marketing for you.
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and extend
+          your brand in digital places.
         </p>
       </LearnMoreCard>
     </Wrapper>

@@ -28,7 +28,8 @@ text-align: center;
 & p:first-of-type {
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--dark-grayish-blue);
+  color: var(--very-dark-grayish-blue);
+  line-height: 32px;
 
   @media ${QUERIES.desktopAndUp} {
     padding-top: 60px;
@@ -38,8 +39,8 @@ text-align: center;
 
 
   & p:last-of-type {
-    color: var(--dark-grayish-blue);
-    padding-top: 15px;
+    color: var(--grayish-blue);
+    padding-top: 9px;
     font-size: 14px;
   }
 `;

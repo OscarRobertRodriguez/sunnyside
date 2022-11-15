@@ -21,7 +21,7 @@ function LearnMoreCards() {
         </LinkButton>
       </LearnMoreCard>
       <LearnMoreCard direction="row-reverse" img={img2}>
-        <h2>transform your brand</h2>
+        <h2>Stand out to the right audience</h2>
         <p>
           Using a collaborative formula of designers, researchers,
           photographers, videographers, and copywriters, we’ll build and extend
